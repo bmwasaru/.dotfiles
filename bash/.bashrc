@@ -13,7 +13,7 @@ alias freeze="pip freeze > requirements.txt"
 alias secret="openssl rand -base64 32"
 alias reds="redis-server"
 alias redc="redis-client"
-alias code="Open /Applications/Visual\ Studio\ Code.app"
+alias code="Open /Applications/Visual\ Studio\ Code.app ."
 alias venv="python3 -m venv venv"
 complete -C /usr/local/bin/vault vault
 export PATH="/usr/local/opt/openssl/bin:$PATH"
@@ -43,3 +43,4 @@ get_vcs_info() {
 # Set the PS1 variable to create the prompt
 PS1='$(whoami) in $(get_prompt_dir)$(get_vcs_info)$ '
 
+export PATH="$PATH:$HOME/.local/bin:$PATH"
