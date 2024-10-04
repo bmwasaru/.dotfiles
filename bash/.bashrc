@@ -13,11 +13,12 @@ alias freeze="pip freeze > requirements.txt"
 alias secret="openssl rand -base64 32"
 alias reds="redis-server"
 alias redc="redis-client"
-alias code="Open /Applications/Visual\ Studio\ Code.app ."
+# alias code="Open /Applications/Visual\ Studio\ Code.app ."
 alias venv="python3 -m venv venv"
 complete -C /usr/local/bin/vault vault
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 alias pip="pip3"
+alias psql="/Applications/Postgres.app/Contents/Versions/16/bin/psql"
 
 alias config='/usr/bin/git --git-dir=/Users/zero/.cfg/ --work-tree=/Users/zero'
 
