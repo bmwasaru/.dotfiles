@@ -45,3 +45,6 @@ get_vcs_info() {
 PS1='$(whoami) in $(get_prompt_dir)$(get_vcs_info)$ '
 
 export PATH="$PATH:$HOME/.local/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/zero/.lmstudio/bin"
