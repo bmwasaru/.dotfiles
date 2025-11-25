@@ -4,8 +4,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 alias python="python3"
 alias gs="git status"
-alias ga="git add"
-alias gp="git pull"
+alias ga="git add ."
+alias gp="git pull main origin"
 alias gv="git remote -v"
 alias push="git push origin main"
 alias subl="open -a Sublime\ Text"
@@ -13,12 +13,13 @@ alias freeze="pip freeze > requirements.txt"
 alias secret="openssl rand -base64 32"
 alias reds="redis-server"
 alias redc="redis-client"
-# alias code="Open /Applications/Visual\ Studio\ Code.app ."
+alias code="Open /Applications/Visual\ Studio\ Code.app ."
 alias venv="python3 -m venv venv"
 complete -C /usr/local/bin/vault vault
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 alias pip="pip3"
 alias psql="/Applications/Postgres.app/Contents/Versions/16/bin/psql"
+alias ls="ls -al --color"
 
 alias config='/usr/bin/git --git-dir=/Users/zero/.cfg/ --work-tree=/Users/zero'
 
@@ -48,3 +49,11 @@ export PATH="$PATH:$HOME/.local/bin:$PATH"
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/zero/.lmstudio/bin"
+
+# make direct and cd into it
+function mcd() {
+    mkdir -vp "$1"
+    cd "$1"
+}
+
+export -f mcd
