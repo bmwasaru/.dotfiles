@@ -5,7 +5,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 alias python="python3"
 alias gs="git status"
 alias ga="git add ."
-alias gp="git pull main origin"
+alias gp="git pull origin main"
 alias gv="git remote -v"
 alias push="git push origin main"
 alias subl="open -a Sublime\ Text"
@@ -57,3 +57,5 @@ function mcd() {
 }
 
 export -f mcd
+
+$HOMEBREW_NO_AUTO_UPDATE=1
